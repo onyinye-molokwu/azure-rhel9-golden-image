@@ -3,7 +3,9 @@ Automated CIS-assessed RHEL 9 Golden Image pipeline using Packer, GitHub Actions
 # Azure RHEL 9 Golden Image Factory
 
 ## Overview
+## Project Demo
 
+[Watch the video walkthrough] (https://www.loom.com/share/263610ce5c6a408186553284c5606462)
 This project automates the creation, hardening, assessment, versioning, and publication of RHEL 9 Golden Images in Azure using Infrastructure as Code and CI/CD automation.
 
 The solution uses Terraform to provision Azure image infrastructure, Packer to build and harden images, OpenSCAP to perform CIS security assessments, Azure Compute Gallery for image management, and GitHub Actions for automated image builds.
