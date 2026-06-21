@@ -1,4 +1,4 @@
-# azure-rhel9-golden-image
+# Azure-rhel9-golden-image
 Automated CIS-assessed RHEL 9 Golden Image pipeline using Packer, GitHub Actions, and Azure Compute Gallery for secure, repeatable VM deployments.
 # Azure RHEL 9 Golden Image Factory
 
