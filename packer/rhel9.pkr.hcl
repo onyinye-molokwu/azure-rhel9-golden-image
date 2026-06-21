@@ -13,7 +13,7 @@ source "azure-arm" "rhel9" {
   subscription_id = "cb940b9c-fcd9-462e-b329-a35b66d4c075"
 
   managed_image_resource_group_name = "rg-golden-images-onyinye"
-  managed_image_name                = "rhel9-cis-packer-temp-102"
+  managed_image_name                = "rhel9-cis-packer-temp-103"
 
   os_type         = "Linux"
   image_publisher = "RedHat"
