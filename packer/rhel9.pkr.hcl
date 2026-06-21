@@ -26,7 +26,7 @@ source "azure-arm" "rhel9" {
     resource_group       = "rg-golden-images-onyinye"
     gallery_name         = "gal_golden_images_onyinye"
     image_name           = "rhel9-cis"
-    image_version        = "1.0.2"
+    image_version        = "1.0.3"
     replication_regions  = ["East US"]
     storage_account_type = "Premium_LRS"
   }
