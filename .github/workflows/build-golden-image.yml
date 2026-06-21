@@ -1,0 +1,34 @@
+name: Build RHEL 9 Golden Image
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 0"
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Install Packer
+        uses: hashicorp/setup-packer@v3
+
+      - name: Initialize Packer
+        working-directory: packer
+        run: packer init .
+
+      - name: Validate Packer Template
+        working-directory: packer
+        run: packer validate .
+
+      - name: Build Golden Image
+        working-directory: packer
+        run: packer build .
