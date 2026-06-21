@@ -13,7 +13,7 @@ source "azure-arm" "rhel9" {
   subscription_id = "cb940b9c-fcd9-462e-b329-a35b66d4c075"
 
   managed_image_resource_group_name = "rg-golden-images-onyinye"
-  managed_image_name                = "rhel9-cis-packer-temp-103"
+  managed_image_name                = "rhel9-cis-packer-temp-104"
 
   os_type         = "Linux"
   image_publisher = "RedHat"
@@ -26,7 +26,7 @@ source "azure-arm" "rhel9" {
     resource_group       = "rg-golden-images-onyinye"
     gallery_name         = "gal_golden_images_onyinye"
     image_name           = "rhel9-cis"
-    image_version        = "1.0.3"
+    image_version        = "1.0.4"
     replication_regions  = ["East US"]
     storage_account_type = "Premium_LRS"
   }
