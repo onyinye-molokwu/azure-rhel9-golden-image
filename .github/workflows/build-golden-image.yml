@@ -31,4 +31,4 @@ jobs:
 
       - name: Build Golden Image
         working-directory: packer
-        run: packer build -force .force .
+        run: packer build -force .
